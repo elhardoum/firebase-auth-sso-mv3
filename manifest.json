@@ -1,0 +1,21 @@
+{
+  "action": {
+    "default_popup": "./src/popup/public/index.html"
+  },
+  "permissions": [ "identity" ],
+  "description": "Firebase Auth SSO MV3 demo",
+  "manifest_version": 3,
+  "name": "Firebase Auth SSO MV3",
+  "short_name": "Firebase Auth SSO MV3",
+  "version": "0.1",
+  "web_accessible_resources": [],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; script-src-elem 'self' 'unsafe-inline';"
+  },
+  "oauth2": {
+    "client_id": "<some-id>.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/userinfo.email"
+    ]
+  }
+}

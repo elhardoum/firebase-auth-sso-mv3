@@ -1,0 +1,31 @@
+{
+  "name": "firebase-auth-sso-mv3-popup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "maybe-install": "test -d node_modules || npm install",
+    "start": "npm run maybe-install; webpack --mode development",
+    "build": "npm run maybe-install; webpack --mode production",
+    "serve": "npm run maybe-install; webpack serve --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "elhardoum",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "babel-polyfill": "^6.26.0",
+    "blob": "^0.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "webpack": "^5.59.1",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "firebase": "^9.8.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
